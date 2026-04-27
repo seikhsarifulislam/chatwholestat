@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Expo
+.expo/
+web-build/
+
+# Android
+android/app/build/
+android/app/debug/
+android/app/release/
+android/build/
+android/gradlew
+android/gradlew.bat
+android/key.properties
+android/local.properties
+
+# iOS
+ios/build/
+ios/Pods/
+ios/Podfile.lock
+
+# Build artifacts
+*.apk
+*.aab
+*.ipa
+.DS_Store
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Firebase service account keys
+**/*.json
+!**/src/config/firebase.js
