@@ -5,6 +5,8 @@
 - [x] eas.json created
 - [x] Dependencies installed
 - [x] EAS CLI installing
+- [x] Build failure diagnosis complete
+- [x] BLACKBOXAI fix plan approved
 
 ## Steps to Complete
 
@@ -33,24 +35,34 @@ eas login
 ```
 (Use your Expo account)
 
-### 6. Configure Builds
+### 6. Configure Builds ✅ (Execute next)
 ```
 cd chatwholestat
+eas login  # If not logged in (use Expo account)
 eas build:configure
 ```
-- [ ] Now valid!
+- [ ] 
 
-### 7. Preview APK (Test)
+### 7. Verify & Commit Changes
 ```
+cd chatwholestat
+git add .
+git commit -m "Configure EAS build (fix package.json issue)"
+git push
+```
+- [ ]
+
+### 8. Preview APK Build (Test)
+```
+cd chatwholestat
 eas build --platform android --profile preview
 ```
-Download APK from Expo dashboard.
+- [ ] Download from Expo dashboard
 
-### 8. Production APK/AAB (Play Store)
+### 9. Production AAB (Play Store)
 ```
+cd chatwholestat
+eas credentials  # Setup keystore if needed
 eas build --platform android --profile production
 ```
-Requires keystore setup via `eas credentials`.
-
-### 9. Play Store Upload
-Upload AAB/APK to Google Play Console.
+- [ ] Upload to Google Play Console
